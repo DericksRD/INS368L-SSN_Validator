@@ -19,7 +19,7 @@ When the program is executed, it needs to behave with the following steps:
 
 ## Development Insight
 
-- It will be a document with all Case Scenarios that need to be tested.  
+- It will be a document with all Test Cases that need to be tested.  
 - The program will be created using C#, with .Net 6. The code will be written in Visual Studio Code.
 - The format validation can be develop using Regular Expressions (Regex).
 
