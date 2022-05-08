@@ -11,7 +11,7 @@
 
 | Step # | Description | Expected Result | Actual Result | State |
 |  ---:  |    :---:    |       :---:     |     :---:     | :---: |
-| 1      | Insert @ssn | Message "The Social Security Number is valid"      |          |  |
+| 1      | Insert @ssn | Message "Número de Seguridad Social válido"      |   Message "Número de Seguridad Social válido"    | pass |
 
 ## Scenario 2: Invalid input, bad format
 
@@ -24,7 +24,7 @@
 
 | Step # | Description | Expected Result | Actual Result | State |
 |  ---:  |    :---:    |       :---:     |     :---:     | :---: |
-| 1      | Insert @ssn | Message "The Social Security Number must have format xxx-xx-xxxx"      |          |  |
+| 1      | Insert @ssn | Message "El número de Seguridad Social debe tener el formato xxx-xx-xxxx"      |  Message "El número de Seguridad Social debe tener el formato xxx-xx-xxxx"   | pass |
 
 ## Scenario 3: Invalid input, incorrect numbers
 
@@ -37,11 +37,11 @@
 
 | Step # | Description | Expected Result | Actual Result | State |
 |  ---:  |    :---:    |       :---:     |     :---:     | :---: |
-| 1      | Insert @ssn | Message "The Social security number can't start with 000, 666, 999 or be follow by 00"      |          |  |
+| 1      | Insert @ssn | Message "El Número de Seguridad Social no puede empezr con 000, 666 o entre 900 y 999"      |  Message "El Número de Seguridad Social no puede empezr con 000, 666 o entre 900 y 999"  | pass |
 
 ### Variables
 @ssn = 666-00-5711
 
 | Step # | Description | Expected Result | Actual Result | State |
 |  ---:  |    :---:    |       :---:     |     :---:     | :---: |
-| 1      | Insert @ssn | Message "The Social security number can't start with 000, 666, 999 or be follow by 00"      |          |  |
+| 1      | Insert @ssn | Message "El Número de Seguridad Social no puede empezr con 000, 666 o entre 900 y 999"      | Message "El Número de Seguridad Social no puede empezr con 000, 666 o entre 900 y 999"   | pass |
