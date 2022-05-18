@@ -48,11 +48,17 @@ public class Progran
             return;
         }
 
+        if(regexGroups[1].Count() != 2)
+        {
+            Console.WriteLine("El Número de Seguridad Social debe tener el formato xxx-xx-xxxx");
+        }
+        
         if(regexGroups[1] == "00")
         {
             Console.WriteLine("El número que se encuentra entre '-' no puede ser 00"); 
             return;
         }
+
 
         if(regexGroups[2] == "0000")
             Console.WriteLine("La tercera parte del Número de Seguridad Social no puede ser 000");
